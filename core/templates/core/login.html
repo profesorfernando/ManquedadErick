@@ -1,0 +1,10 @@
+{% extends 'core/plantilla.html' %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+<a href="{% url 'registro' %}">¿No tienes una cuenta?</a>
+{% endblock %}

@@ -1,0 +1,23 @@
+h1{
+    color: brown;
+}
+
+nav>a{
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header, footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    height: 20vh;
+}
